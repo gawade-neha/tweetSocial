@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>twitterGateway</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <script src="/javascripts/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="/javascripts/scriptFuncsHome.js"></script>
+    <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"></link>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-custom" role="navigation" ng-controller="NavCtrl">
+
+      <ul class="nav nav-pills nav-justified">
+          <li class="active"><a href="/first.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li class="active"><a href="/index.html"><span class="glyphicon glyphicon-share"></span> Post Tweets</a></li>
+        <li style="margin:0 0 0 800px" class="notactive"><a id="user" href="/home.html"></a></li>
+        <li class="active"><a id="logout" href="">Log Out</a></li>
+      </ul>
+  </nav>
+
+  <div class="col-xs-3">
+      <div class="project project-radius project-primary">
+          <div class="shape">
+              <div class="shape-text">
+                  Grp
+              </div>
+          </div>
+          <div class="project-content">
+              <h4 class="lead">
+                  Select Group members:
+              </h4>
+              <input type="text"  class="form-control"  id="groupmem" size="35"   placeholder="Select group members">
+              <br><button type="button" id="makegroup" class="btn btn-labeled btn-success">
+                  <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Submit</button>
+
+          </div>
+      </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+       <div class="col-md-6 col-md-offset-3">
+          <!-- <h1 class="center"> Tweets for approval </h1>  -->
+          <div id="uid"></div>
+          <br/>
+          <div id="postTweets" class="div-table">
+          </div>
+
+
+       </div>
+    </div>
+  </div>
+  <div class="bg-primary" id="footer"><div class="container-fluid text-center">
+      <div class="row">
+          <div class="col-xs-6">
+              <p>
+              <dl>
+                  <dt>Features</dt>
+                  <dd>Team Collaboration</dd>
+                  <dd>Publishing</dd>
+                  <dd>Social CRM</dd>
+                  <dd>Monitoring</dd>
+              </dl>
+              </p>
+          </div>
+          <div class="col-xs-6">
+              <p>
+              <dl>
+                  <dt>Support</dt>
+                  <dd>Email Us</dd>
+                  <dd>groupsocial@cs.fullerton.edu</dd>
+                  <dd>Address:</dd>
+                  <dd>800 N state college Blvd</dd>
+                  <dd>Fullerton,CA 92831</dd>
+              </dl>
+              </p>
+          </div>
+          <div class="SiteFooter-copyright">
+              <p>&copy; Copyright 2016 Group Social, Inc. All Rights Reserved.
+                  <a href=""><span>Privacy</span></a> |
+                  <a href=""><span>Terms</span></a> |
+                  <a href=""><span>Disclosure Policy</span></a> |
+                  <a href=""><span>Cookies</span></a>
+              </p>
+          </div>
+      </div>
+  </div>
+  </div>
+
+
+</body>
+</html>
